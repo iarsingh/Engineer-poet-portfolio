@@ -1,0 +1,11 @@
+src/generated/**/*
+src/generated/prisma/**/*
+src/generated/prisma/runtime/**/*
+node_modules
+.next
+prisma/client
+*.js.map
+*.d.ts
+dist
+build
+coverage

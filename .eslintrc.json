@@ -1,0 +1,28 @@
+{
+  "extends": "next/core-web-vitals",
+  "overrides": [
+    {
+      "files": [
+        "src/generated/**/*",
+        "src/generated/prisma/**/*",
+        "src/generated/prisma/runtime/**/*"
+      ],
+      "rules": {
+        "@typescript-eslint/no-unused-expressions": "off",
+        "@typescript-eslint/no-unused-vars": "off",
+        "@typescript-eslint/no-this-alias": "off",
+        "@typescript-eslint/no-require-imports": "off",
+        "no-unused-expressions": "off",
+        "no-unused-vars": "off"
+      }
+    },
+    {
+      "files": ["src/generated/prisma/wasm.js"],
+      "rules": {
+        "@typescript-eslint/no-unused-vars": "off",
+        "@typescript-eslint/no-require-imports": "off",
+        "no-unused-vars": "off"
+      }
+    }
+  ]
+}
