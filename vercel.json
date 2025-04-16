@@ -7,11 +7,14 @@
     }
   ],
   "env": {
-    "NEXTAUTH_URL": "https://engineer-poet-portfolio.vercel.app"
+    "NEXTAUTH_URL": "https://engineer-poet-portfolio.vercel.app",
+    "NODE_ENV": "production"
   },
   "build": {
     "env": {
-      "NEXTAUTH_URL": "https://engineer-poet-portfolio.vercel.app"
+      "NEXTAUTH_URL": "https://engineer-poet-portfolio.vercel.app",
+      "NODE_ENV": "production"
     }
-  }
+  },
+  "regions": ["sin1"]
 } 
