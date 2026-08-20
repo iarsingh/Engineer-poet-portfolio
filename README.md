@@ -1,5 +1,9 @@
 # Engineer & Poet Portfolio
 
+<!-- repository-summary -->
+A Next.js portfolio combining DevOps engineering experience and poetry, with authentication, Prisma, and an admin dashboard.
+<!-- /repository-summary -->
+
 A personal portfolio site for Akhilesh Singh that toggles between two views on the same page — **Engineer**
 (résumé, about, projects, contact) and **Poet** (poetry collection, about, contact) — built with Next.js 15
 (App Router), TypeScript, Tailwind CSS, and Prisma/PostgreSQL, with a full admin dashboard for managing
