@@ -1,5 +1,39 @@
 # Engineer & Poet Portfolio
 
+<!-- project-guide:start -->
+## Project guide
+
+[Project architecture](PROJECT_ARCHITECTURE.md) · [Interview questions and answers](INTERVIEW_QA.md)
+
+Use the architecture document for the component diagram, implementation boundaries, and verification entry points. The interview guide includes source-backed answers and project walkthroughs.
+
+### Implementation map
+
+| Component | Responsibility |
+| --- | --- |
+| [`package.json`](package.json) | Implementation or supporting configuration |
+| [`next.config.js`](next.config.js) | Implementation or supporting configuration |
+| [`next.config.ts`](next.config.ts) | Implementation or supporting configuration |
+| [`server.js`](server.js) | Implementation or supporting configuration |
+| [`lib/prisma.ts`](lib/prisma.ts) | Implementation or supporting configuration |
+| [`prisma/seed.js`](prisma/seed.js) | Implementation or supporting configuration |
+| [`src/app/layout.tsx`](src/app/layout.tsx) | Implementation or supporting configuration |
+| [`src/app/page.tsx`](src/app/page.tsx) | Implementation or supporting configuration |
+| [`src/app/providers.tsx`](src/app/providers.tsx) | Implementation or supporting configuration |
+| [`.github/workflows/ci.yml`](.github/workflows/ci.yml) | GitHub Actions job definitions |
+| [`README.md`](README.md) | Project explanations or operating notes |
+
+### Local setup and verification
+
+From the repository root (the commands follow the checked-in manifests):
+
+```bash
+npm install
+npm run dev
+```
+
+<!-- project-guide:end -->
+
 <!-- repository-summary -->
 A Next.js portfolio combining DevOps engineering experience and poetry, with authentication, Prisma, and an admin dashboard.
 <!-- /repository-summary -->
