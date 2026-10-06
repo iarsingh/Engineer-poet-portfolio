@@ -1,4 +1,4 @@
-import { PrismaClient } from '../generated/prisma';
+import { PrismaClient } from '@prisma/client';
 
 const prismaClientSingleton = () => {
   return new PrismaClient();
@@ -38,7 +38,7 @@ export async function createMessage(name: string, email: string, content: string
     data: {
       name,
       email,
-      content,
+      message: content,
       read: false,
     },
   });

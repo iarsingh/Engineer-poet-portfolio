@@ -8,8 +8,8 @@ interface Message {
   id: string;
   name: string;
   email: string;
-  content: string;
-  recipientType: string;
+  message: string;
+  recipientType?: string;
   language?: string;
   confidence?: number;
   read: boolean;
@@ -129,7 +129,7 @@ export default function MessagesPage() {
                     {message.email}
                   </a>
                   <div className="text-sm text-gray-500 dark:text-gray-400 mt-1">
-                    Recipient: {message.recipientType}
+                    {message.recipientType && <>Recipient: {message.recipientType}</>}
                     {message.language && (
                       <span className="ml-2">
                         Language: {message.language}
@@ -160,7 +160,7 @@ export default function MessagesPage() {
                 </div>
               </div>
               <p className="text-gray-600 dark:text-gray-300 whitespace-pre-wrap">
-                {message.content}
+                {message.message}
               </p>
               <p className="text-sm text-gray-500 dark:text-gray-400 mt-2">
                 {new Date(message.createdAt).toLocaleString()}
