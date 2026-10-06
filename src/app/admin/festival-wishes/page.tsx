@@ -16,7 +16,7 @@ interface FestivalWish {
 }
 
 export default function FestivalWishesPage() {
-  const { data: session, status } = useSession();
+  const { status } = useSession();
   const router = useRouter();
   const [wishes, setWishes] = useState<FestivalWish[]>([]);
   const [loading, setLoading] = useState(true);
