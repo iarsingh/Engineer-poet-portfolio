@@ -1,5 +1,12 @@
 # Engineer & Poet Portfolio
 
+## Overview
+
+A personal site for Akhilesh Singh that switches the same page between an Engineer view (resume, projects, contact) and a Poet view (poetry collection, contact) using a client-side context. An admin dashboard behind NextAuth credentials login manages projects, poems, festival wishes and contact messages, with bcrypt-hashed admin passwords stored in PostgreSQL through Prisma. The layout uses Tailwind CSS with Framer Motion animations and dark mode, and GitHub Actions lints and builds every push and pull request to `main`.
+
+- **Built with:** Next.js 15, React 19, TypeScript, Tailwind CSS, Prisma, PostgreSQL, NextAuth.js, GitHub Actions
+- **Scope:** Personal portfolio site with a `vercel.json` for Vercel; Google Cloud Translate is only wired in as a dependency for possible multi-language poetry.
+
 <!-- project-guide:start -->
 ## Project guide
 
